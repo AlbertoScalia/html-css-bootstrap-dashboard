@@ -9,22 +9,27 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>html-css-bootstrap-dashboard</title>
 </head>
-<body>
+<body class="bg-body-tertiary">
 
     <!--Header-->
     <header class="fixed-top d-flex align-items-center px-2">
-        <div class="col-12 d-flex align-items-center">
+        <div class="col-12 d-flex align-items-center gap-3 px-1">
+
+            <!--Logo-->
             <a href="#"><img src="./img/logo.svg" alt="logo"></a>
 
-            <form action="">
-
+            <!--Form-->
+            <form class="d-flex align-items-center mx-2 ps-2" role="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="form-control me-2 border-0 bg-body-secondary" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
             </form>
 
-            <div class="d-flex align-items-center">
-
+            <!--Icons-->
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="fa-solid fa-list text-dark d-none d-lg-inline-block"></a>
+                <a href="#" class="fa-solid fa-circle-question text-dark d-none d-lg-inline-block"></a>
+                <a href="#" class="fa-solid fa-ellipsis-vertical text-dark d-none d-lg-inline-block"></a>
             </div>
-                
-
         </div>
     </header>
 
@@ -32,33 +37,52 @@
     <div class="d-flex wrapper">
 
         <!--Nav laterale-->
-        <nav id="sidebar">
-
+        <nav id="sidebar" class="flex-column nav px-2 py-3">
+            <a class="nav-link text-white" href="#">
+                <i class="fa-solid fa-house me-2"></i>
+                <span class="d-none d-lg-inline-block">Home</span>
+            </a>
+            <a class="nav-link text-white" href="#">
+                <i class="fa-solid fa-chart-simple me-2"></i>
+                <span class="d-none d-lg-inline-block">Stats</span>
+            </a>
+            <a class="nav-link text-white" href="#">
+                <i class="fa-solid fa-signal me-2"></i>
+                <span class="d-none d-lg-inline-block">Signals</span>
+            </a>
+            <a class="nav-link text-white mt-auto" href="#">
+                <i class="fa-solid fa-gear me-2"></i>
+                <span class="d-none d-lg-inline-block">Admin</span>
+            </a>
         </nav>
 
         <!--Main-->
         <main>
 
             <!--Header del main-->
-            <aside class="bg-primary">
+            <aside class="bg-primary text-white">
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row py-3">
                         <div class="col-12 col-md-4 col-lg-6">
+
+                            <!--Header sinistro-->
                             <div class="row">
                                 <div class="col-12">
                                     <h3>Boolean</h3>
-                                    <span>Piano blaze</span>
+                                    <span class="badge h-m-text">Piano blaze</span>
                                 </div>
                                 <div class="col-12">
-                                    <span>3 app</span>
+                                    <span class="badge h-m-text">3 app</span>
                                     <span><i class="fa-solid fa-angles-right"></i></span>
-                                    <span>+</span>
-                                    <span>Boolean mobile app</span>
-                                    <span>Boolean web app</span>
-                                    <span>Boolean blog app</span>
+                                    <span class="badge h-m-text d-inline-block d-lg-none">+</span>
+                                    <span class="badge h-m-text d-none d-lg-inline-block">Boolean mobile app</span>
+                                    <span class="badge h-m-text d-none d-lg-inline-block">Boolean web app</span>
+                                    <span class="badge h-m-text d-none d-lg-inline-block">Boolean blog app</span>
                                 </div>        
                             </div>
                         </div>
+
+                         <!--Header destro-->
                         <div class="col-12 col-md-8 col-lg-6">
                             <div class="row">
                                 <div class="col-12 col-md-6 col-lg-9">
@@ -92,6 +116,174 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <h4>Prossime classi</h4>
+                                    </div>
+                                    <div class="p-3">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th class="fw-semibold">Nome</th>
+                                                    <th class="fw-semibold text-center">Data inizio</th>
+                                                    <th class="fw-semibold text-center">ROI</th>
+                                                    <th class="fw-semibold text-center">Stato</th>
+                                                    <th class="fw-semibold text-center">Azioni</th>
+                                                </tr>    
+                                            </thead>
+                                            <tbody>
+                                                <th scope="row">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar riga">
+                                                        <span class="fw-semibold">Classe 75</span>
+                                                    </div>  
+                                                </th>
+                                                <td class="text-center fw-semibold">15 Feb 2021</td>
+                                                <td class="text-center fw-semibold">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-pencil"></small>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-trash"></small>
+                                                    </button>
+                                                </td>
+                                            </tbody>
+                                            <tbody>
+                                                <th scope="row">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar riga">
+                                                        <span class="fw-semibold">Classe 76</span>
+                                                    </div>  
+                                                </th>
+                                                <td class="text-center fw-semibold">16 Feb 2021</td>
+                                                <td class="text-center fw-semibold">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-pencil"></small>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-trash"></small>
+                                                    </button>
+                                                </td>
+                                            </tbody>
+                                            <tbody>
+                                                <th scope="row">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar riga">
+                                                        <span class="fw-semibold">Classe 77</span>
+                                                    </div>  
+                                                </th>
+                                                <td class="text-center fw-semibold">17 Feb 2021</td>
+                                                <td class="text-center fw-semibold">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-warning text-white">process</span></td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-pencil"></small>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-trash"></small>
+                                                    </button>
+                                                </td>
+                                            </tbody>
+                                            <tbody>
+                                                <th scope="row">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar riga">
+                                                        <span class="fw-semibold">Classe 78</span>
+                                                    </div>  
+                                                </th>
+                                                <td class="text-center fw-semibold">18 Feb 2021</td>
+                                                <td class="text-center fw-semibold">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-pencil"></small>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-trash"></small>
+                                                    </button>
+                                                </td>
+                                            </tbody>
+                                            <tbody>
+                                                <th scope="row">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar riga">
+                                                        <span class="fw-semibold">Classe 79</span>
+                                                    </div>  
+                                                </th>
+                                                <td class="text-center fw-semibold">19 Feb 2021</td>
+                                                <td class="text-center fw-semibold">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-danger">failed</span></td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-pencil"></small>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-trash"></small>
+                                                    </button>
+                                                </td>
+                                            </tbody>
+                                            <tbody>
+                                                <th scope="row">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar riga">
+                                                        <span class="fw-semibold">Classe 80</span>
+                                                    </div>  
+                                                </th>
+                                                <td class="text-center fw-semibold">20 Feb 2021</td>
+                                                <td class="text-center fw-semibold">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-pencil"></small>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-trash"></small>
+                                                    </button>
+                                                </td>
+                                            </tbody>
+                                            <tbody>
+                                                <th scope="row">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar riga">
+                                                        <span class="fw-semibold">Classe 81</span>
+                                                    </div>  
+                                                </th>
+                                                <td class="text-center fw-semibold">21 Feb 2021</td>
+                                                <td class="text-center fw-semibold">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-danger">failed</span></td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-pencil"></small>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-trash"></small>
+                                                    </button>
+                                                </td>
+                                            </tbody>
+                                            <tbody>
+                                                <th scope="row">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img src="./img/class-avatar.jpg" alt="Avatar riga">
+                                                        <span class="fw-semibold">Classe 82</span>
+                                                    </div>  
+                                                </th>
+                                                <td class="text-center fw-semibold">22 Feb 2021</td>
+                                                <td class="text-center fw-semibold">20%</td>
+                                                <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                                <td class="text-center">
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-pencil"></small>
+                                                    </button>
+                                                    <button type="button" class="btn btn-outline-dark py-1 px-2">
+                                                        <small class="fa-solid fa-trash"></small>
+                                                    </button>
+                                                </td>
+                                            </tbody>
+
+                                            
+                                        </table>
+
                                     </div>
                                 </div>
                             </div>

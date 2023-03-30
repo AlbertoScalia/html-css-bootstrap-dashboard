@@ -1,14 +1,16 @@
 :root {
     --header-height: 60px;
     --sidebar-bg-color: #051e34;
+    --h-m-text: #165bba;
 }
 
 header{
+    width: 100%;
     height: var(--header-height);
 }
 
 #sidebar{
-    width: 300px;
+    width: 200px;
     height: 100%;
     background-color: var(--sidebar-bg-color);
     background-image: url("../img/sidebar-bg.png");
@@ -21,8 +23,27 @@ header{
 
 main{
     height: 100%;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 aside h3{
     display: inline-block;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.h-m-text{
+    font-weight: lighter;
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--h-m-text);
+}
+
+table img{
+    width: 30px;
 }
