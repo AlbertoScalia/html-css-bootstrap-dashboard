@@ -85,14 +85,14 @@ table img {
         gap: 1.5rem;
     }
 
+    .text-hide {
+        display: none;
+    }
+
 }
 
 
 @media screen and (max-width: 992px) {
-
-    .text-hide {
-        display: none;
-    }
 
     #faq {
         margin-bottom: 1rem;
