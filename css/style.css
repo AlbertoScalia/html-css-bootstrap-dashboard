@@ -1,23 +1,43 @@
 :root {
-    --header-height: 60px;
+    --header-height: 70px;
     --sidebar-bg-color: #051e34;
     --h-m-text: #165bba;
 }
+
+
+/*****************************************************************/
+/**************************** Header *****************************/
 
 header {
     width: 100%;
     height: var(--header-height);
 }
 
-#logo{
+header a {
+    text-decoration: none;
+}
+
+header form {
+    flex-grow: 1;
+}
+
+#logo {
     height: 40px;
 }
+
+
+/*****************************************************************/
+/************************** Main Content *************************/
 
 #sidebar {
     width: 200px;
     height: 100%;
     background-color: var(--sidebar-bg-color);
     background-image: url("../img/sidebar-bg.png");
+}
+
+#sidebar a:hover {
+    background-color: rgba(215, 215, 215, 0.5);
 }
 
 .wrapper {
@@ -36,14 +56,6 @@ aside h3 {
     display: inline-block;
 }
 
-header a {
-    text-decoration: none;
-}
-
-header form {
-    flex-grow: 1;
-}
-
 .h-m-text {
     font-weight: lighter;
     padding: 5px 10px;
@@ -54,4 +66,30 @@ header form {
 
 table img {
     width: 30px;
+}
+
+
+/*****************************************************************/
+/************************** Media Queries ************************/
+
+
+@media screen and (max-width: 768px) {
+
+    aside>div>div {
+        gap: 1.5rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .text-hide {
+        display: none;
+    }
+
+    #faq {
+        margin-bottom: 1rem;
+    }
+
 }

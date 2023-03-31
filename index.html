@@ -36,6 +36,15 @@
                 <a href="#" class="d-lg-inline-block d-none text-dark fa-solid fa-list"></a>
                 <a href="#" class="d-lg-inline-block d-none text-dark fa-solid fa-circle-question "></a>
                 <a href="#" class="d-lg-inline-block d-none text-dark fa-solid fa-ellipsis-vertical"></a>
+                <div class="dropdown">
+                    <a href="#" class="fa-solid fa-bell text-warning"  role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -75,7 +84,7 @@
                         <div class="col-12 col-md-4 col-lg-3 order-md-2">
                             <div class="row">
                                 <div class="col-12 col-md-6 col-lg-12 order-md-2">
-                                    <span class="fw-semibold"> Nuovo studente</span>
+                                    <span class="fw-semibold me-3"> Nuovo studente</span>
                                     <button class="btn btn-outline-light" type="button">
                                         <i class="fa-solid fa-plus"></i>
                                     </button>
@@ -92,8 +101,8 @@
                                 </div>
                                 <div class="col-12">
                                     <span class="badge h-m-text">3 app</span>
-                                    <span><i class="fa-solid fa-angles-right"></i></span>
-                                    <span class="d-lg-inline-block d-none d-lg-none badge h-m-text">+</span>
+                                    <small><i class="fa-solid fa-angles-right"></i></small>
+                                    <span class="d-lg-inline-block d-lg-none badge h-m-text">+</span>
                                     <span class="d-lg-inline-block d-none badge h-m-text">Boolean mobile app</span>
                                     <span class="d-lg-inline-block d-none badge h-m-text">Boolean web app</span>
                                     <span class="d-lg-inline-block d-none badge h-m-text">Boolean blog app</span>
@@ -135,8 +144,8 @@
                                             <thead>
                                                 <tr>
                                                     <th class="fw-semibold">Nome</th>
-                                                    <th class="fw-semibold text-center">Data inizio</th>
-                                                    <th class="fw-semibold text-center">ROI</th>
+                                                    <th class="fw-semibold text-center text-hide">Data inizio</th>
+                                                    <th class="fw-semibold text-center text-hide ">ROI</th>
                                                     <th class="fw-semibold text-center">Stato</th>
                                                     <th class="fw-semibold text-center">Azioni</th>
                                                 </tr>
@@ -148,8 +157,8 @@
                                                         <span class="fw-semibold"> Classe 75</span>
                                                     </div>
                                                 </th>
-                                                <td class="fw-semibold text-center">15 Feb 2021</td>
-                                                <td class="fw-semibold text-center">20%</td>
+                                                <td class="fw-semibold text-center text-hide">15 Feb 2021</td>
+                                                <td class="fw-semibold text-center text-hide">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success">Done</span>
                                                 </td>
                                                 <td class="text-center">
@@ -168,8 +177,8 @@
                                                         <span class="fw-semibold">Classe 76</span>
                                                     </div>
                                                 </th>
-                                                <td class="fw-semibold text-center">16 Feb 2021</td>
-                                                <td class="fw-semibold text-center">20%</td>
+                                                <td class="fw-semibold text-center text-hide">16 Feb 2021</td>
+                                                <td class="fw-semibold text-center text-hide">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success">Done</span>
                                                 </td>
                                                 <td class="text-center">
@@ -188,8 +197,8 @@
                                                         <span class="fw-semibold">Classe 77</span>
                                                     </div>
                                                 </th>
-                                                <td class="fw-semibold text-center">17 Feb 2021</td>
-                                                <td class="fw-semibold text-center">20%</td>
+                                                <td class="fw-semibold text-center text-hide">17 Feb 2021</td>
+                                                <td class="fw-semibold text-center text-hide">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-warning text-white">process</span></td>
                                                 <td class="text-center">
                                                     <button type="button" class="btn btn-outline-dark py-1 px-2">
@@ -207,8 +216,8 @@
                                                         <span class="fw-semibold">Classe 78</span>
                                                     </div>
                                                 </th>
-                                                <td class="fw-semibold text-center">18 Feb 2021</td>
-                                                <td class="fw-semibold text-center">20%</td>
+                                                <td class="fw-semibold text-center text-hide">18 Feb 2021</td>
+                                                <td class="fw-semibold text-center text-hide">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success">Done</span>
                                                 </td>
                                                 <td class="text-center">
@@ -227,8 +236,8 @@
                                                         <span class="fw-semibold">Classe 79</span>
                                                     </div>
                                                 </th>
-                                                <td class="fw-semibold text-center">19 Feb 2021</td>
-                                                <td class="fw-semibold text-center">20%</td>
+                                                <td class="fw-semibold text-center text-hide">19 Feb 2021</td>
+                                                <td class="fw-semibold text-center text-hide">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-danger">failed</span>
                                                 </td>
                                                 <td class="text-center">
@@ -247,8 +256,8 @@
                                                         <span class="fw-semibold">Classe 80</span>
                                                     </div>
                                                 </th>
-                                                <td class="fw-semibold text-center">20 Feb 2021</td>
-                                                <td class="fw-semibold text-center">20%</td>
+                                                <td class="fw-semibold text-center text-hide">20 Feb 2021</td>
+                                                <td class="fw-semibold text-center text-hide">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success">Done</span>
                                                 </td>
                                                 <td class="text-center">
@@ -267,8 +276,8 @@
                                                         <span class="fw-semibold">Classe 81</span>
                                                     </div>
                                                 </th>
-                                                <td class="fw-semibold text-center">21 Feb 2021</td>
-                                                <td class="fw-semibold text-center">20%</td>
+                                                <td class="fw-semibold text-center text-hide">21 Feb 2021</td>
+                                                <td class="fw-semibold text-center text-hide">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-danger">failed</span>
                                                 </td>
                                                 <td class="text-center">
@@ -287,8 +296,8 @@
                                                         <span class="fw-semibold">Classe 82</span>
                                                     </div>
                                                 </th>
-                                                <td class="fw-semibold text-center">22 Feb 2021</td>
-                                                <td class="fw-semibold text-center">20%</td>
+                                                <td class="fw-semibold text-center text-hide">22 Feb 2021</td>
+                                                <td class="fw-semibold text-center text-hide">20%</td>
                                                 <td class="text-center"><span class="badge text-bg-success">Done</span>
                                                 </td>
                                                 <td class="text-center">
@@ -306,87 +315,87 @@
                             </div>
 
                             <!--Colonna sinistra inferiore-->
-                            <div class="col-12">
+                            <div class="col-12" id="faq">
                                 <div class="card">
                                     <div class="card-header">
                                         <h4>F.A.Q.</h4>
                                     </div>
-                                </div>
-                                <div class="accordion" id="accordionExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                aria-expanded="false" aria-controls="collapseOne">
-                                                <small class="fw-semibold">Come aggiungere un nuovo studente?</small>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse"
-                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <small>
-                                                    <strong>This is the third item's accordion body.</strong> It is
-                                                    hidden by default, until the collapse plugin adds the appropriate
-                                                    classes that we use to style each element. These classes control the
-                                                    overall appearance, as well as the showing and hiding via CSS
-                                                    transitions. You can modify any of this with custom CSS or
-                                                    overriding our default variables. It's also worth noting that just
-                                                    about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
-                                                </small>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="false" aria-controls="collapseOne">
+                                                    <small class="fw-semibold">Come aggiungere un nuovo studente?</small>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <small>
+                                                        <strong>This is the third item's accordion body.</strong> It is
+                                                        hidden by default, until the collapse plugin adds the appropriate
+                                                        classes that we use to style each element. These classes control the
+                                                        overall appearance, as well as the showing and hiding via CSS
+                                                        transitions. You can modify any of this with custom CSS or
+                                                        overriding our default variables. It's also worth noting that just
+                                                        about any HTML can go within the <code>.accordion-body</code>,
+                                                        though the transition does limit overflow.
+                                                    </small>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                aria-expanded="false" aria-controls="collapseTwo">
-                                                <small class="fw-semibold">Come posso accedere alle informazioni del mio
-                                                    account?</small>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <small>
-                                                    <strong>This is the third item's accordion body.</strong> It is
-                                                    hidden by default, until the collapse plugin adds the appropriate
-                                                    classes that we use to style each element. These classes control the
-                                                    overall appearance, as well as the showing and hiding via CSS
-                                                    transitions. You can modify any of this with custom CSS or
-                                                    overriding our default variables. It's also worth noting that just
-                                                    about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
-                                                </small>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    <small class="fw-semibold">Come posso accedere alle informazioni del mio
+                                                        account?</small>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <small>
+                                                        <strong>This is the third item's accordion body.</strong> It is
+                                                        hidden by default, until the collapse plugin adds the appropriate
+                                                        classes that we use to style each element. These classes control the
+                                                        overall appearance, as well as the showing and hiding via CSS
+                                                        transitions. You can modify any of this with custom CSS or
+                                                        overriding our default variables. It's also worth noting that just
+                                                        about any HTML can go within the <code>.accordion-body</code>,
+                                                        though the transition does limit overflow.
+                                                    </small>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-                                                <small class="fw-semibold">Posso usare questa dashboard da
-                                                    mobile?</small>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <small>
-                                                    <strong>This is the third item's accordion body.</strong> It is
-                                                    hidden by default, until the collapse plugin adds the appropriate
-                                                    classes that we use to style each element. These classes control the
-                                                    overall appearance, as well as the showing and hiding via CSS
-                                                    transitions. You can modify any of this with custom CSS or
-                                                    overriding our default variables. It's also worth noting that just
-                                                    about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.
-                                                </small>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    <small class="fw-semibold">Posso usare questa dashboard da
+                                                        mobile?</small>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <small>
+                                                        <strong>This is the third item's accordion body.</strong> It is
+                                                        hidden by default, until the collapse plugin adds the appropriate
+                                                        classes that we use to style each element. These classes control the
+                                                        overall appearance, as well as the showing and hiding via CSS
+                                                        transitions. You can modify any of this with custom CSS or
+                                                        overriding our default variables. It's also worth noting that just
+                                                        about any HTML can go within the <code>.accordion-body</code>,
+                                                        though the transition does limit overflow.
+                                                    </small>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>    
                                 </div>
                             </div>
                         </div>
@@ -396,32 +405,32 @@
                     <div class="col-12 col-lg-4">
                         <div class="row gy-3">
 
-                            <!--COlonna destra superiore-->
-                            <div class="col-12">
+                            <!--Colonna destra superiore-->
+                            <div class="col-12 small">
                                 <div class="card">
                                     <div class="card-header">
                                         <h4>Todo</h4>
                                     </div>
-                                    <div class="container-fluid py-2 small">
+                                    <div class="container-fluid py-2 ">
                                         <div class="form-check rounded-top border border-bottom-0 mb-0 py-1 px-2">
                                             <input class="form-check-input mx-1" type="checkbox" value=""
                                                 id="flexCheckDefault">
-                                            <label class="form-check-label fw-semibold" for="flexCheckDefault">
-                                                Kickoff nuove classi
+                                            <label class="form-check-label fw-semibold" for="flexCheckDefault"> 
+                                                <small> Kickoff nuove classi  </small>
                                             </label>
                                         </div>
                                         <div class="form-check border border-bottom-0 mb-0 py-1 px-2">
                                             <input class="form-check-input mx-1" type="checkbox" value=""
                                                 id="flexCheckDefault">
-                                            <label class="form-check-label fw-semibold" for="flexCheckDefault">
-                                                Lezione su Bootstrap 5 in classe #75
+                                            <label class="form-check-label fw-semibold" for="flexCheckDefault"> 
+                                                <small>Lezione su Bootstrap 5 in classe #75</small>
                                             </label>
                                         </div>
                                         <div class="form-check rounded-bottom border mb-0 py-1 px-2">
                                             <input class="form-check-input mx-1" type="checkbox" value=""
                                                 id="flexCheckDefault">
                                             <label class="form-check-label fw-semibold" for="flexCheckDefault">
-                                                Controllare username github studenti
+                                                <small>Controllare username github studenti</small>
                                         </div>
                                     </div>
                                 </div>
