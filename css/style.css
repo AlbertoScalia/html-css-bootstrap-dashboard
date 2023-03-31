@@ -22,7 +22,7 @@ header form {
 }
 
 #logo {
-    height: 40px;
+    height: 50px;
 }
 
 
@@ -42,7 +42,6 @@ header form {
 
 .wrapper {
     height: calc(100vh - var(--header-height));
-    margin-top: var(--header-height);
 }
 
 main {
@@ -68,6 +67,9 @@ table img {
     width: 30px;
 }
 
+.offcanvas {
+    width: 50% !important;
+}
 
 /*****************************************************************/
 /************************** Media Queries ************************/
@@ -75,10 +77,14 @@ table img {
 
 @media screen and (max-width: 768px) {
 
+    .offcanvas {
+        width: 100% !important;
+    }
+
     aside>div>div {
         gap: 1.5rem;
     }
-    
+
 }
 
 
