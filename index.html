@@ -19,10 +19,13 @@
         <div class="col-12 d-flex align-items-center gap-3 px-1">
 
             <!--Logo-->
-            <a href="#"><img src="./img/logo.svg" alt="logo"></a>
-
+            <div>
+                <a href="#" class="navbar-brand d-xs-block d-lg-none"><img src="./img/mobile-logo.png" id="logo" alt="mobile-logo"></a>
+                <a href="#" class="navbar-brand d-none d-sm-none d-md-none d-lg-block"><img src="./img/logo.svg" alt="logo"></a>
+            </div>
+            
             <!--Form-->
-            <form class="d-flex align-items-center mx-2 ps-2" role="search">
+            <form class="d-flex align-items-center border rounded bg-body-secondary mx-2 ps-2" role="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input class="form-control bg-body-secondary border-0 me-2" type="search"
                     placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
@@ -67,9 +70,21 @@
             <aside class="bg-primary text-white">
                 <div class="container-fluid">
                     <div class="row py-3">
-                        <div class="col-12 col-md-4 col-lg-6">
 
-                            <!--Header sinistro-->
+                        <!--Sezione destra che sotto i 768px apparirà per prima-->
+                        <div class="col-12 col-md-4 col-lg-3 order-md-2">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-12 order-md-2">
+                                    <span class="fw-semibold"> Nuovo studente</span>
+                                    <button class="btn btn-outline-light" type="button">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Sezione sinistra che sotto i 768px apparirà per seconda-->
+                        <div class="col-12 col-md-4 col-lg-6">
                             <div class="row">
                                 <div class="col-12">
                                     <h3>Boolean</h3>
@@ -86,20 +101,14 @@
                             </div>
                         </div>
 
-                        <!--Header destro-->
-                        <div class="col-12 col-md-8 col-lg-6">
+                        <!--Sezione centrale che sotto i 768px apparirà per ultima-->
+                        <div class="col-12 col-md-4 col-lg-3">
                             <div class="row">
-                                <div class="col-12 col-md-6 col-lg-9">
+                                <div class="col-12 col-md-12 col-lg-12">
                                     <div class="row">
                                         <div class="col-12 fw-semibold">Studenti online negli ultimi 30 minuti</div>
                                         <div class="col-12 fw-semibold fs-3">125</div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-3">
-                                    <span class="fw-semibold"> Nuovo studente</span>
-                                    <button class="btn btn-outline-light" type="button">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +118,7 @@
 
             <!--Contenuto del main-->
             <div class="container-fluid">
-                <div class="row py-2">
+                <div class="row py-3">
 
                     <!--Colonna sinistra-->
                     <div class="col-12 col-lg-8">
@@ -181,8 +190,7 @@
                                                 </th>
                                                 <td class="fw-semibold text-center">17 Feb 2021</td>
                                                 <td class="fw-semibold text-center">20%</td>
-                                                <td class="text-center"><span
-                                                        class="badge text-bg-warning text-white">process</span></td>
+                                                <td class="text-center"><span class="badge text-bg-warning text-white">process</span></td>
                                                 <td class="text-center">
                                                     <button type="button" class="btn btn-outline-dark py-1 px-2">
                                                         <small class="fa-solid fa-pencil"></small>
@@ -316,14 +324,16 @@
                                         <div id="collapseOne" class="accordion-collapse collapse"
                                             aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                <small><strong>This is the third item's accordion body.</strong> It is
+                                                <small>
+                                                    <strong>This is the third item's accordion body.</strong> It is
                                                     hidden by default, until the collapse plugin adds the appropriate
                                                     classes that we use to style each element. These classes control the
                                                     overall appearance, as well as the showing and hiding via CSS
                                                     transitions. You can modify any of this with custom CSS or
                                                     overriding our default variables. It's also worth noting that just
                                                     about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.</small>
+                                                    though the transition does limit overflow.
+                                                </small>
                                             </div>
                                         </div>
                                     </div>
@@ -339,14 +349,16 @@
                                         <div id="collapseTwo" class="accordion-collapse collapse"
                                             aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                <small><strong>This is the third item's accordion body.</strong> It is
+                                                <small>
+                                                    <strong>This is the third item's accordion body.</strong> It is
                                                     hidden by default, until the collapse plugin adds the appropriate
                                                     classes that we use to style each element. These classes control the
                                                     overall appearance, as well as the showing and hiding via CSS
                                                     transitions. You can modify any of this with custom CSS or
                                                     overriding our default variables. It's also worth noting that just
                                                     about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.</small>
+                                                    though the transition does limit overflow.
+                                                </small>
                                             </div>
                                         </div>
                                     </div>
@@ -362,14 +374,16 @@
                                         <div id="collapseThree" class="accordion-collapse collapse"
                                             aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                                <small><strong>This is the third item's accordion body.</strong> It is
+                                                <small>
+                                                    <strong>This is the third item's accordion body.</strong> It is
                                                     hidden by default, until the collapse plugin adds the appropriate
                                                     classes that we use to style each element. These classes control the
                                                     overall appearance, as well as the showing and hiding via CSS
                                                     transitions. You can modify any of this with custom CSS or
                                                     overriding our default variables. It's also worth noting that just
                                                     about any HTML can go within the <code>.accordion-body</code>,
-                                                    though the transition does limit overflow.</small>
+                                                    though the transition does limit overflow.
+                                                </small>
                                             </div>
                                         </div>
                                     </div>
